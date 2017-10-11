@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜你！获得"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/fenshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="55dp"
+            android:text="0分"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff7730"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享"
+                android:background="@drawable/radios"/>
+            <Button
+                android:id="@+id/cxjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:text="重新计算"
+                android:background="@drawable/radios"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

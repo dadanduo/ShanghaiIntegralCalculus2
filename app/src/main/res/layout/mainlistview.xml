@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFB6C1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海积分落户"
+            android:textSize="23dp"
+           android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D3D3D3">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/radios">
+
+        <TextView
+            android:id="@+id/showone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="\n
+  上海积分入户政策基础指标：\n
+             一、年龄\n
+             二、学历\n
+             三、职业资格\n
+             四、社保基数\n
+
+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D3D3D3">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true">
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/radiosmall"
+            android:text=""
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:phoneNumber="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="岁"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学历"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/xueli"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资质证明"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/zizhizhengming"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社保基数"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_below="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:text="(社保金额除以上年度平均工资）" />
+
+        <TextView
+            android:id="@+id/shebaojishu"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/radios">
+
+        <TextView
+            android:id="@+id/showtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="\n
+  上海积分入户政策加分指标：\n
+             一、投资纳税\n
+             二、带动本地就业\n
+             三、创业人才\n
+             四、创新创业中介服务人才\n
+
+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D3D3D3">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近3年投资纳税金额"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/nashuijine"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近3年带动就业人数"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/jiuyerenshu"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否是创业型人才"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/chaungyerencai"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否是创新创业中介服务人才"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/fuwurencai"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:layout_marginRight="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/radios">
+
+        <TextView
+            android:id="@+id/showthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="\n
+  上海积分入户政策减分：\n
+             一、提供虚假材料\n
+             二、行政拘留\n
+             三、一般犯罪\n
+
+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D3D3D3">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3年内提供虚假材料"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+        <EditText
+            android:id="@+id/xujiacailiao"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+            android:text=""
+            android:phoneNumber="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="份"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五年内有行政拘留的次数"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+        <EditText
+            android:id="@+id/juliucishu"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/radiosmall"
+
+            android:text=""
+            android:phoneNumber="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次"/>
+            </LinearLayout>
+
+</LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5年内一般犯罪的条数"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+        <EditText
+            android:id="@+id/ganzuitiaoshu"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/radiosmall"
+
+            android:text=""
+            android:phoneNumber="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="条"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        ></View>
+
+
+</LinearLayout>
